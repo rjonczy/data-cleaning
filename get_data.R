@@ -11,5 +11,7 @@ download.file(url, destfile = zipped_dataset, method = "curl")
 
 unzip(zipped_dataset, exdir = "data")
 
+file.rename("./data/UCI HAR Dataset", "./data/dataset")
+
 # save date when data was downloaded
 dateDownloaded <- date()
