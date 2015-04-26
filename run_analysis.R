@@ -35,6 +35,6 @@ melted <- melt(data_new, id.var = c("subject", "data.labels"))
 means <- dcast(melted, subject + data.labels ~ variable, mean)
 
 # save tidy data into file 
-write.table(means, file="./data/tidy_data.txt", row.names = FALSE)
+write.table(means, file="./data/dataset-tidy.txt", row.names = FALSE)
 
 

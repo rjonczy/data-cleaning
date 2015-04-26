@@ -17,7 +17,7 @@ Executing R files in following order:
 
 1.) `get_data.R`
 
-* downloads archibe with dataset
+* downloads archive with dataset
 * extracts dataset from zipped archive
 * renames folder containing dataset
 
