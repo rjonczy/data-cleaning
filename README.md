@@ -17,11 +17,17 @@ Executing R files in following order:
 
 1.) `get_data.R`
 
+* downloads archibe with dataset
+* extracts dataset from zipped archive
+* renames folder containing dataset
+
 2.) `run_analysis.R`
 
-### Getting data
-
-### Cleaning data
+* merges test and training datasets and create single dataset
+* extracts only measurments on the mean and standard deviation for each measurement
+* uses descriptive activity names to name the activities in the data set
+* labels the dataset with descriptive variable names
+* saves tidy dataset into `dataset-tidy.txt` file
 
 ## References
 
