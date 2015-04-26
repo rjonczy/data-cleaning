@@ -34,6 +34,7 @@ data_new <- data[, c(1, 2, col_mean_std)]
 melted <- melt(data_new, id.var = c("subject", "data.labels"))
 means <- dcast(melted, subject + data.labels ~ variable, mean)
 
+# save tidy data into file 
 write.table(means, file="./data/tidy_data.txt", row.names = FALSE)
 
 
